@@ -1,0 +1,18 @@
+[
+  {
+    "fisrtName": "Casa grande",
+    "lastName": "Waterson",
+    "birthDate": "2010-08-25",
+    "testResult": false,
+    "id": "8ee4bc0d-3797-4562-b5dc-0b4a60481ccd",
+    "age": 10
+  },
+  {
+    "fisrtName": "Tom",
+    "lastName": "Waterson",
+    "birthDate": "2000-08-25",
+    "testResult": false,
+    "id": "61c816c5-93d9-4376-9962-eb787ec7391d",
+    "age": 20
+  }
+]
