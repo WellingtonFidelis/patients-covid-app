@@ -30,5 +30,29 @@
     "testResult": "negativo",
     "id": "e689523f-14fc-4c0a-a7ea-a472e9f1119c",
     "age": 4
+  },
+  {
+    "firstName": "Pretinha",
+    "lastName": "Linda",
+    "birthDate": "2021-04-21",
+    "testResult": "negativo",
+    "id": "fd1c443a-29d2-4490-9178-8293ea2a8777",
+    "age": 1
+  },
+  {
+    "firstName": "Pretinha",
+    "lastName": "Porquinha",
+    "birthDate": "2021-04-21",
+    "testResult": "negativo",
+    "id": "f9d73a1d-635b-4097-a8b7-16c9a5057373",
+    "age": 1
+  },
+  {
+    "firstName": "Mochila",
+    "lastName": "Nike",
+    "birthDate": "2020-05-10",
+    "testResult": "negativo",
+    "id": "6a2824e5-dbac-47d6-9408-32943d022c9d",
+    "age": 0
   }
 ]

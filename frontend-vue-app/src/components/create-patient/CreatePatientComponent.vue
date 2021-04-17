@@ -112,50 +112,6 @@
   </div>
 </template>
 
-<script>
-import PatientService from "../../services/PatientService";
+<script src="./CreatePatient.js"></script>
 
-export default {
-  components: {
-    //name: "CreatePatientComponent",
-  },
-  data() {
-    return {
-      patient: {
-        firstName: null,
-        lastName: null,
-        birthDate: null,
-        testResult: null,
-      },
-      isSubmited: false,
-    };
-  },
-  methods: {
-    verifyTestResult() {
-      if (!this.patient.testResult) {
-        return (this.isSubmited = false);
-      }
-      return (this.isSubmited = true);
-    },
-    handleSubmitForm() {
-      console.log("Enviando");
-    },
-    async submitNewPatient() {
-      try {
-        if (this.verifyTestResult()) {
-          console.log(this.isSubmited);
-          console.log("dasdjaskjd", this.patient);
-          await PatientService.createPatient(this.patient);
-          this.$router.push({
-            name: "list",
-          });
-        }
-      } catch (error) {
-        console.log(error);
-      }
-    },
-  },
-};
-</script>
-
-<style></style>
+<style src="" scoped></style>
