@@ -1,26 +1,39 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Home from "../views/Home.vue";
+import NProgress from "nprogress";
 
 const routes = [
   {
     path: "/",
-    name: "Home",
-    component: Home,
+    name: "Create new patient",
+    component: () =>
+      import("../components/create-patient/CreatePatientComponent"),
   },
   {
-    path: "/about",
-    name: "About",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue"),
+    path: "/list-patients",
+    name: "List of all patients",
+    component: () => import("../components/list-patient/ListPatientComponent"),
+  },
+  {
+    path: "/edit-patient/:id",
+    name: "Update patient",
+    component: () => import("../components/edit-patient/EditPatientComponent"),
   },
 ];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
+});
+
+router.beforeResolve((to, from, next) => {
+  if (to.name) {
+    NProgress.start();
+  }
+  next();
+});
+/* maybe to, from params will be used in .afterEach() */
+router.afterEach(() => {
+  NProgress.done();
 });
 
 export default router;

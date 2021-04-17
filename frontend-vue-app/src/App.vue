@@ -1,30 +1,48 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div>
+    <!-- begin nav -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">COVID</a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <router-link class="nav-link active" aria-current="page" to="/">
+                Cadastrar
+              </router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" to="/list-patients">
+                Consultar
+              </router-link>
+            </li>
+            <li class="nav-item">
+              <router-link
+                class="nav-link"
+                to="/edit-patient/:id"
+                tabindex="-1"
+                aria-disabled="true"
+                >Editar</router-link
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end nav -->
   </div>
-  <router-view />
+  <div class="container mt-5">
+    <router-view />
+  </div>
 </template>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
