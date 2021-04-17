@@ -18,7 +18,7 @@
                   class="form-control"
                   name="inputFirstName"
                   id="inputFirstName"
-                  v-model="patient.firstname"
+                  v-model="patient.firstName"
                   placeholder=""
                   required="true"
                 />
@@ -71,7 +71,8 @@
                     name="inputRadioTest"
                     id="inputRadioTestPositivo"
                     v-model="patient.testResult"
-                    value="true"
+                    value="positivo"
+                    required="true"
                   />
                   <label class="form-check-label" for="inputRadioTestPositivo"
                     >Positivo</label
@@ -84,8 +85,8 @@
                     name="inputRadioTest"
                     id="inputRadioTestNegativo"
                     v-model="patient.testResult"
-                    value="false"
-                    checked
+                    value="negativo"
+                    required="true"
                   />
                   <label class="form-check-label" for="inputRadioTestNegativo"
                     >Negativo</label
@@ -96,7 +97,10 @@
           </div>
           <!-- button to save -->
           <div class="row ml-2 mr-2 mt-3">
-            <div class="form-group col-sm-3 col-md-6 mx-auto">
+            <div
+              class="form-group col-sm-3 col-md-6 mx-auto"
+              v-on:click="submitNewPatient"
+            >
               <button type="submit" class="btn btn-success btn-block">
                 Salvar
               </button>
@@ -109,6 +113,8 @@
 </template>
 
 <script>
+import PatientService from "../../services/PatientService";
+
 export default {
   components: {
     //name: "CreatePatientComponent",
@@ -116,16 +122,37 @@ export default {
   data() {
     return {
       patient: {
-        firstName: "",
-        lastName: "",
-        birthDate: "",
-        testResult: false,
+        firstName: null,
+        lastName: null,
+        birthDate: null,
+        testResult: null,
       },
+      isSubmited: false,
     };
   },
   methods: {
-    handleSubmitForm: () => {
+    verifyTestResult() {
+      if (!this.patient.testResult) {
+        return (this.isSubmited = false);
+      }
+      return (this.isSubmited = true);
+    },
+    handleSubmitForm() {
       console.log("Enviando");
+    },
+    async submitNewPatient() {
+      try {
+        if (this.verifyTestResult()) {
+          console.log(this.isSubmited);
+          console.log("dasdjaskjd", this.patient);
+          await PatientService.createPatient(this.patient);
+          this.$router.push({
+            name: "list",
+          });
+        }
+      } catch (error) {
+        console.log(error);
+      }
     },
   },
 };

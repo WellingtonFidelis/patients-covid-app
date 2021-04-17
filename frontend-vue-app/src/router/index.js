@@ -4,18 +4,18 @@ import NProgress from "nprogress";
 const routes = [
   {
     path: "/",
-    name: "Create new patient",
+    name: "create",
     component: () =>
       import("../components/create-patient/CreatePatientComponent"),
   },
   {
     path: "/list-patients",
-    name: "List of all patients",
+    name: "list",
     component: () => import("../components/list-patient/ListPatientComponent"),
   },
   {
     path: "/edit-patient/:id",
-    name: "Update patient",
+    name: "update",
     component: () => import("../components/edit-patient/EditPatientComponent"),
   },
 ];
