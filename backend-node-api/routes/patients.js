@@ -1,4 +1,4 @@
-import express, { response, Router } from 'express';
+import express from 'express';
 
 import { createPatient, deletePatient, getPatientById, getPatients, retrievePatient } from '../controllers/patients.js'
 
