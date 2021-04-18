@@ -16,4 +16,4 @@ app.get('/', (request, response) => {
   response.send('Hello from homepage.');
 });
 
-app.listen(PORT, () => console.log(`Server running on port: http://127.0.0.1:${PORT}`));
+app.listen(PORT, () => console.log(`Server running on port: http://localhost:${PORT}`));

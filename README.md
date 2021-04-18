@@ -8,9 +8,9 @@
 
 <p align="center">
   <a href="https://www.linkedin.com/in/wellington-fidelis-7b02b167/"><img alt="Made by" src="https://img.shields.io/badge/made%20by-Wellington%20Fidelis-%2315C3D6"></a>
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/WellingtonFidelis/nlw03?color=15C3D6">
-  <a href="https://github.com/WellingtonFidelis/nlw03/commits/master"><img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/WellingtonFidelis/nlw03?color=15C3D6"></a>
-  <img alt="GitHub" src="https://img.shields.io/github/license/WellingtonFidelis/nlw03?color=15C3D6">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/WellingtonFidelis/patients-covid-app?color=15C3D6">
+  <a href="https://github.com/WellingtonFidelis/patients-covid-app/commits/master"><img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/WellingtonFidelis/patients-covid-app?color=15C3D6"></a>
+  <img alt="GitHub" src="https://img.shields.io/github/license/WellingtonFidelis/patients-covid-app?color=15C3D6">
 </p>
 
 <p align="center">
@@ -22,17 +22,14 @@
 </p>
 
 <p align="center">
-  <img alt="Happy" src="https://github.com/WellingtonFidelis/nlw03/blob/master/portifolio/template_git.png?raw=true" width="100%">
+  <img alt="Happy" src="https://github.com/WellingtonFidelis/patients-covid-app/blob/master/portifolio/template_git.png?raw=true" width="100%">
 </p>
 
 ## 🧸 About the project
 
-This project was developed on the Next Level Week #03 event by [Rocketseat](https://rocketseat.com.br/) 🚀&nbsp;💜
-
-Happy is an application that connects people to institutional care homes to make many children's day happie.
+This project was developer for test using Vue.js and Node.js &nbsp;💜
 
 See more pictures with the app working below
-
 
 
 ## 🚀 Technologies
@@ -40,20 +37,12 @@ See more pictures with the app working below
 Technologies that I used to develop this application
 
 - [Node.js](https://nodejs.org/en/)
-- [ReactJS](https://reactjs.org/)
-- [React Native](https://reactnative.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Expo](https://expo.io/)
+- [Vue.js](https://vuejs.org/)
+- [Vue CLI](https://cli.vuejs.org/)
 - [Express](https://expressjs.com/pt-br/)
-- [TypeORM](https://typeorm.io/#/)
-- [Yup](https://github.com/jquense/yup)
 - [Axios](https://github.com/axios/axios)
-- [React Router DOM](https://reacttraining.com/react-router/)
-- [React Navigation](https://reactnavigation.org/)
-- [StyledComponents](https://styled-components.com/)
-- [SQLite](https://www.sqlite.org/index.html/)
-- [MVC architecture](https://www.devmedia.com.br/introducao-ao-padrao-mvc/29308/)
-- [Hooks](https://pt-br.reactjs.org/docs/hooks-intro.html)
+- [Bootstrap](https://getbootstrap.com/)
+- [NProgress](https://www.npmjs.com/package/nprogress)
 
 ## 💻 Getting started
 
@@ -62,11 +51,11 @@ You need of the same things.
 ### Requirements
 
 - [Node.js](https://nodejs.org/en/)
-- [Yarn](https://classic.yarnpkg.com/)
-- [Expo](https://expo.io/)
+- [Npm](https://www.npmjs.com/)
+- [Vue CLI](https://cli.vuejs.org/)
 
 ```bash
-$ git clone https://github.com/WellingtonFidelis/nlw03.git && cd nlw03
+$ git clone https://github.com/WellingtonFidelis/patients-covid-app.git && cd patients-covid-app
 ```
 
 **Follow the steps below**
@@ -75,13 +64,11 @@ $ git clone https://github.com/WellingtonFidelis/nlw03.git && cd nlw03
 
 ```bash
 # Starting from the project root folder, go to backend folder
-$ cd backend
+$ cd backend-node-api
 # Install the dependencies
-$ yarn
-# Use the script to run the migrations
-$ yarn typeorm migration:run
+$ npm install
 # To finish, run the api service
-$ yarn dev
+$ npm run start
 # Well done, project is started!
 ```
 
@@ -91,24 +78,12 @@ _Obs.: Before to continue, be sure to have the API running_
 
 ```bash
 # Starting from the project root folder, go to web folder
-$ cd web
+$ cd frontend-vue-app
 # Install the dependencies
-$ yarn
-# Be sure the file 'src/services/api.ts' have the IP to your API
+$ npm install
+# Be sure the file 'src/services/Api.js' have the IP to your API
 # Start the client
-$ yarn start
-```
-
-### Mobile
-
-_Obs.: Before to continue, be sure to have the API running_
-
-```bash
-# Starting from the project root folder, go to mobile folder
-$ cd mobile
-# Be sure the file 'src/services/api.ts' have the IP to your API
-# Start the expo service and scan the QR code with Expo Client
-$ yarn start
+$ npm run serve
 ```
 
 ## 🤔 How to contribute
@@ -118,14 +93,14 @@ $ yarn start
 ```bash
 # Fork using GitHub official command line
 # If you don't have the GitHub CLI, use the web site to do that.
-$ gh repo fork WellingtonFidelis/nlw03
+$ gh repo fork WellingtonFidelis/patients-covid-app
 ```
 
 **Follow the steps below**
 
 ```bash
 # Clone your fork
-$ git clone your-fork-url && cd nlw03
+$ git clone your-fork-url && cd patients-covid-app
 # Create a branch with your feature
 $ git checkout -b my-feature
 # Make the commit with your changes
@@ -140,17 +115,17 @@ After your pull request is merged, you can delete your branch
 ## :camera: Pictures
 
 <p align="center">
-    <img alt="Main page" src="https://github.com/WellingtonFidelis/nlw03/blob/master/portifolio/page_main_dia_1.png?raw=true">
-    <img alt="Orphanages" src="https://github.com/WellingtonFidelis/nlw03/blob/master/portifolio/page_app_dia_1.png?raw=true">
-    <img alt="Orphanage create" src="https://github.com/WellingtonFidelis/nlw03/blob/master/portifolio/page_app_create_orphanaga_1.png?raw=true">
-    <img alt="Orphanage create" src="https://github.com/WellingtonFidelis/nlw03/blob/master/portifolio/page_app_create_orphanage_2.png?raw=true">    
-    <img width="200" heigth="600" alt="Orphanage create" src="https://github.com/WellingtonFidelis/nlw03/blob/master/portifolio/Screenshot_20201018-195827_Expo.jpg?raw=true">
-    <img width="200" heigth="600" alt="Orphanage create" src="https://github.com/WellingtonFidelis/nlw03/blob/master/portifolio/Screenshot_20201018-195903_Expo.jpg?raw=true">
-    <img width="200" heigth="600" alt="Orphanage create" src="https://github.com/WellingtonFidelis/nlw03/blob/master/portifolio/Screenshot_20201018-200002_Expo.jpg?raw=true">
-    <img width="200" heigth="600" alt="Orphanage create" src="https://github.com/WellingtonFidelis/nlw03/blob/master/portifolio/Screenshot_20201018-200430_Expo.jpg?raw=true">
-    <img width="200" heigth="600" alt="Orphanage create" src="https://github.com/WellingtonFidelis/nlw03/blob/master/portifolio/Screenshot_20201018-200436_Expo.jpg?raw=true">
-    <img width="200" heigth="600" alt="Orphanage create" src="https://github.com/WellingtonFidelis/nlw03/blob/master/portifolio/Screenshot_20201018-200540_Expo.jpg?raw=true">
-    <img width="200" heigth="600" alt="Orphanage create" src="https://github.com/WellingtonFidelis/nlw03/blob/master/portifolio/Screenshot_20201018-200610_Expo.jpg?raw=true">
+    <img alt="Main page" src="https://github.com/WellingtonFidelis/patients-covid-app/blob/master/portifolio/page_main_dia_1.png?raw=true">
+    <img alt="Orphanages" src="https://github.com/WellingtonFidelis/patients-covid-app/blob/master/portifolio/page_app_dia_1.png?raw=true">
+    <img alt="Orphanage create" src="https://github.com/WellingtonFidelis/patients-covid-app/blob/master/portifolio/page_app_create_orphanaga_1.png?raw=true">
+    <img alt="Orphanage create" src="https://github.com/WellingtonFidelis/patients-covid-app/blob/master/portifolio/page_app_create_orphanage_2.png?raw=true">    
+    <img width="200" heigth="600" alt="Orphanage create" src="https://github.com/WellingtonFidelis/patients-covid-app/blob/master/portifolio/Screenshot_20201018-195827_Expo.jpg?raw=true">
+    <img width="200" heigth="600" alt="Orphanage create" src="https://github.com/WellingtonFidelis/patients-covid-app/blob/master/portifolio/Screenshot_20201018-195903_Expo.jpg?raw=true">
+    <img width="200" heigth="600" alt="Orphanage create" src="https://github.com/WellingtonFidelis/patients-covid-app/blob/master/portifolio/Screenshot_20201018-200002_Expo.jpg?raw=true">
+    <img width="200" heigth="600" alt="Orphanage create" src="https://github.com/WellingtonFidelis/patients-covid-app/blob/master/portifolio/Screenshot_20201018-200430_Expo.jpg?raw=true">
+    <img width="200" heigth="600" alt="Orphanage create" src="https://github.com/WellingtonFidelis/patients-covid-app/blob/master/portifolio/Screenshot_20201018-200436_Expo.jpg?raw=true">
+    <img width="200" heigth="600" alt="Orphanage create" src="https://github.com/WellingtonFidelis/patients-covid-app/blob/master/portifolio/Screenshot_20201018-200540_Expo.jpg?raw=true">
+    <img width="200" heigth="600" alt="Orphanage create" src="https://github.com/WellingtonFidelis/patients-covid-app/blob/master/portifolio/Screenshot_20201018-200610_Expo.jpg?raw=true">
 </p>
 
 </p>
