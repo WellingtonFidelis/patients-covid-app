@@ -14,11 +14,16 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#">COVID</a>
+        <router-link class="navbar-brand" to="/">COVID-19</router-link>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <router-link class="nav-link active" aria-current="page" to="/">
+              <router-link
+                class="nav-link"
+                :class="active"
+                aria-current="page"
+                to="/"
+              >
                 Cadastrar
               </router-link>
             </li>
@@ -27,7 +32,7 @@
                 Consultar
               </router-link>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <router-link
                 class="nav-link"
                 to="/edit-patient/:id"
@@ -35,7 +40,7 @@
                 aria-disabled="true"
                 >Editar</router-link
               >
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
