@@ -22,7 +22,7 @@
 </p>
 
 <p align="center">
-  <img alt="Happy" src="https://github.com/WellingtonFidelis/patients-covid-app/blob/master/portifolio/template_git.png?raw=true" width="100%">
+  <img alt="Add Page" src="https://github.com/WellingtonFidelis/patients-covid-app/blob/master/portifolio/addPage.png?raw=true" width="100%">
 </p>
 
 ## 🧸 About the project
@@ -115,17 +115,8 @@ After your pull request is merged, you can delete your branch
 ## :camera: Pictures
 
 <p align="center">
-    <img alt="Main page" src="https://github.com/WellingtonFidelis/patients-covid-app/blob/master/portifolio/page_main_dia_1.png?raw=true">
-    <img alt="Orphanages" src="https://github.com/WellingtonFidelis/patients-covid-app/blob/master/portifolio/page_app_dia_1.png?raw=true">
-    <img alt="Orphanage create" src="https://github.com/WellingtonFidelis/patients-covid-app/blob/master/portifolio/page_app_create_orphanaga_1.png?raw=true">
-    <img alt="Orphanage create" src="https://github.com/WellingtonFidelis/patients-covid-app/blob/master/portifolio/page_app_create_orphanage_2.png?raw=true">    
-    <img width="200" heigth="600" alt="Orphanage create" src="https://github.com/WellingtonFidelis/patients-covid-app/blob/master/portifolio/Screenshot_20201018-195827_Expo.jpg?raw=true">
-    <img width="200" heigth="600" alt="Orphanage create" src="https://github.com/WellingtonFidelis/patients-covid-app/blob/master/portifolio/Screenshot_20201018-195903_Expo.jpg?raw=true">
-    <img width="200" heigth="600" alt="Orphanage create" src="https://github.com/WellingtonFidelis/patients-covid-app/blob/master/portifolio/Screenshot_20201018-200002_Expo.jpg?raw=true">
-    <img width="200" heigth="600" alt="Orphanage create" src="https://github.com/WellingtonFidelis/patients-covid-app/blob/master/portifolio/Screenshot_20201018-200430_Expo.jpg?raw=true">
-    <img width="200" heigth="600" alt="Orphanage create" src="https://github.com/WellingtonFidelis/patients-covid-app/blob/master/portifolio/Screenshot_20201018-200436_Expo.jpg?raw=true">
-    <img width="200" heigth="600" alt="Orphanage create" src="https://github.com/WellingtonFidelis/patients-covid-app/blob/master/portifolio/Screenshot_20201018-200540_Expo.jpg?raw=true">
-    <img width="200" heigth="600" alt="Orphanage create" src="https://github.com/WellingtonFidelis/patients-covid-app/blob/master/portifolio/Screenshot_20201018-200610_Expo.jpg?raw=true">
+    <img alt="Main page" src="https://github.com/WellingtonFidelis/patients-covid-app/blob/master/portifolio/addPage.png?raw=true">
+    <img alt="List page" src="https://github.com/WellingtonFidelis/patients-covid-app/blob/master/portifolio/listPage.png?raw=true">
 </p>
 
 </p>
