@@ -23,7 +23,7 @@ export default {
       return (this.isSubmited = true);
     },
     handleSubmitForm() {
-      console.log("Enviando");
+      console.log("Criando paciente.");
     },
     async submitNewPatient() {
       try {

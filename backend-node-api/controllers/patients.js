@@ -46,7 +46,7 @@ export const createPatient = (request, response) => {
 
   savePatient(patients);
 
-  response.send(`Paciente ${newPatient.fisrtName} ${newPatient.lastName}, cadastrado com sucesso.`);
+  response.send(`Paciente ${newPatient.firstName} ${newPatient.lastName}, cadastrado com sucesso.`);
 
 };
 
@@ -79,7 +79,6 @@ export const deletePatient = (request, response) => {
 
 export const retrievePatient = (request, response) => {
   const { id } = request.params;
-  const {fisrtName, lastName, birthDate, testResult} = request.body;
 
   const existentPatients = getPatientData();
 
@@ -93,25 +92,25 @@ export const retrievePatient = (request, response) => {
   });
 
   const {
-    fisrtName: currentFisrtName,
+    firstName: currentFirstName,
     lastName: currentLastName,
     birthDate: currentBirthDate,
     testResult: currentTestResult
   } = existentPatients[patientSelectedIndex];
 
   const newPatientUpdated = {
-    fisrtName: fisrtName ? fisrtName : currentFisrtName,
-    lastName: lastName ? lastName : currentLastName,
-    birthDate: birthDate ? birthDate : currentBirthDate,
-    testResult: testResult ? testResult : currentTestResult,
+    firstName: request.body['firstName'] ? request.body['firstName'] : currentFirstName,
+    lastName: request.body['lastName'] ? request.body['lastName'] : currentLastName,
+    birthDate: request.body['birthDate'] ? request.body['birthDate'] : currentBirthDate,
+    testResult: request.body['testResult'] ? request.body['testResult'] : currentTestResult,
     id: id,
-    age: calculateAge(birthDate ? birthDate : currentBirthDate)
+    age: calculateAge(request.body['birthDate'] ? request.body['birthDate'] : currentBirthDate)
   }
 
   existentPatients[patientSelectedIndex] = newPatientUpdated;
 
   savePatient(existentPatients);
 
-  response.send(`Dados do paciente ${newPatientUpdated.fisrtName} alterado com sucesso.`)
+  response.send(`Dados do paciente ${newPatientUpdated.firstName} alterado com sucesso.`)
 
 }

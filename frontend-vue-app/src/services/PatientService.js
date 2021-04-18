@@ -28,9 +28,9 @@ export default {
       console.log("Error when try get patient. ", error);
     }
   },
-  async retrievePatient(id) {
+  async retrievePatient(object) {
     try {
-      const response = await Api().patch(`/${id}`);
+      const response = await Api().patch(`/${object.id}`, object);
       const data = await response.data;
       return data;
     } catch (error) {

@@ -15,7 +15,6 @@ export default {
       this.patients = response;
     },
     async removePatient(id) {
-      console.log(id);
       const isConfirmed = confirm("Tem certeza?");
       if (isConfirmed) {
         await PatientService.deletePatient(id);
