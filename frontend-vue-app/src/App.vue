@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="">
     <!-- begin nav -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <div class="container-fluid">
         <button
           class="navbar-toggler"
@@ -22,7 +22,7 @@
                 class="nav-link"
                 :class="active"
                 aria-current="page"
-                to="/"
+                to="/create-patient"
               >
                 Cadastrar
               </router-link>
@@ -46,8 +46,8 @@
       </div>
     </nav>
     <!-- end nav -->
-  </div>
-  <div class="container mt-5">
-    <router-view />
+    <div class="container mt-5">
+      <router-view />
+    </div>
   </div>
 </template>

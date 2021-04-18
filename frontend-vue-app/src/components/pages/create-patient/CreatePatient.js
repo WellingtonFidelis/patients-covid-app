@@ -1,4 +1,4 @@
-import PatientService from "@/services/PatientService";
+import PatientService from "../../../services/PatientService";
 
 export default {
   components: {

@@ -22,5 +22,13 @@
     "testResult": "negativo",
     "id": "7e56368b-8ed3-4c96-aa75-8f118d8f4d69",
     "age": 1
+  },
+  {
+    "firstName": "Linda",
+    "lastName": "Franciscão",
+    "birthDate": "2010-11-19",
+    "testResult": "negativo",
+    "id": "40e28b51-d757-452b-a040-a8c227320e78",
+    "age": 10
   }
 ]
