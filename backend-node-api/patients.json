@@ -1,29 +1,5 @@
 [
   {
-    "fisrtName": "Casa grande",
-    "lastName": "Waterson",
-    "birthDate": "2010-08-25",
-    "testResult": false,
-    "id": "8ee4bc0d-3797-4562-b5dc-0b4a60481ccd",
-    "age": 10
-  },
-  {
-    "fisrtName": "Tom",
-    "lastName": "Waterson",
-    "birthDate": "2000-08-25",
-    "testResult": false,
-    "id": "61c816c5-93d9-4376-9962-eb787ec7391d",
-    "age": 20
-  },
-  {
-    "fisrtName": "Casa grande",
-    "lastName": "Waterson",
-    "birthDate": "2010-08-25",
-    "testResult": "positivo",
-    "id": "d991832c-30a6-48a0-b9c5-80503617a72a",
-    "age": 10
-  },
-  {
     "firstName": "Pretinha",
     "lastName": "Pretinha",
     "birthDate": "2016-06-15",
@@ -54,5 +30,20 @@
     "testResult": "negativo",
     "id": "6a2824e5-dbac-47d6-9408-32943d022c9d",
     "age": 0
+  },
+  {
+    "firstName": "Bela",
+    "lastName": "Pretinha",
+    "birthDate": "2020-09-14",
+    "testResult": "negativo",
+    "id": "0e841d06-3076-4564-ab11-93299a7c2e68",
+    "age": 0
+  },
+  {
+    "lastName": "Chico",
+    "birthDate": "1995-10-08",
+    "testResult": "positivo",
+    "id": "54863d3a-9dcd-4064-8231-92a836891984",
+    "age": 25
   }
 ]

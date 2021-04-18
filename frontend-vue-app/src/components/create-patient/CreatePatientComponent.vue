@@ -97,11 +97,12 @@
           </div>
           <!-- button to save -->
           <div class="row ml-2 mr-2 mt-3">
-            <div
-              class="form-group col-sm-3 col-md-6 mx-auto"
-              v-on:click="submitNewPatient"
-            >
-              <button type="submit" class="btn btn-success btn-block">
+            <div class="form-group col-sm-3 col-md-6 mx-auto">
+              <button
+                type="submit"
+                class="btn btn-success btn-block"
+                v-on:click="submitNewPatient"
+              >
                 Salvar
               </button>
             </div>

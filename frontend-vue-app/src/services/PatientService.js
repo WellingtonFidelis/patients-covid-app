@@ -30,7 +30,7 @@ export default {
   },
   async retrievePatient(id) {
     try {
-      const response = await Api().get(`/${id}`);
+      const response = await Api().patch(`/${id}`);
       const data = await response.data;
       return data;
     } catch (error) {
@@ -39,7 +39,7 @@ export default {
   },
   async deletePatient(id) {
     try {
-      const response = await Api().get(`/${id}`);
+      const response = await Api().delete(`/${id}`);
       const data = await response.data;
       return data;
     } catch (error) {
